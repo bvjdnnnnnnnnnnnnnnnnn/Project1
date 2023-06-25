@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "User Page";
+}
+<div class="text-center">
+    <h1 class="display-4">Пользователь</h1>
+</div>
+
+<div class="container">
+    <h3>Полученное поручение:</h3>
+    <p>@ViewData["Task"]</p>
+    <form method="post" action="/user/updatestatus">
+        <div class="form-group">
+            <label for="status">Статус исполнения:</label>
+            <input type="text" id="status" name="status" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-primary">Сохранить статус</button>
+    </form>
+</div>
+
+<script>
+    // Вставьте следующий JavaScript-код, чтобы отобразить полученное задание от менеджера
+    var task = "@ViewData["Task"]";
+    if (task !== "") {
+        alert("Получено новое задание:\n" + task);
+    }
+</script>

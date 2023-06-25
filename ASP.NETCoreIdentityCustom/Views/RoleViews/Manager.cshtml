@@ -1,0 +1,48 @@
+﻿@model ASP.NETCoreIdentityCustom.Models.ManagerViewModel
+@{
+    ViewData["Title"] = "Manager";
+}
+
+<h2>Manager Page</h2>
+
+<form method="post" asp-action="Submit">
+    <div class="form-group">
+        <label asp-for="Task" class="control-label">Task</label>
+        <input asp-for="Task" class="form-control" />
+        <span asp-validation-for="Task" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="DueDate" class="control-label">Due Date</label>
+        <input asp-for="DueDate" class="form-control" />
+        <span asp-validation-for="DueDate" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="AssigneeId" class="control-label">Assignee</label>
+        <select asp-for="AssigneeId" asp-items="Model.AssigneeList" class="form-control"></select>
+        <span asp-validation-for="AssigneeId" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+
+<h2>Assignment List:</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Task</th>
+            <th>Assignee</th>
+            <th>Due Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var assignment in Model.Assignments)
+        {
+            <tr>
+                <td>@assignment.Task</td>
+                <td>@assignment.AssigneeId</td>
+                <td>@assignment.DueDate</td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,19 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\ASP.NETCoreIdentityCustom",
+    "\\ASP.NETCoreIdentityCustom\\Areas",
+    "\\ASP.NETCoreIdentityCustom\\Areas\\Identity",
+    "\\ASP.NETCoreIdentityCustom\\Areas\\Identity\\Pages",
+    "\\ASP.NETCoreIdentityCustom\\Areas\\Identity\\Pages\\Account",
+    "\\ASP.NETCoreIdentityCustom\\Controllers",
+    "\\ASP.NETCoreIdentityCustom\\Migrations",
+    "\\ASP.NETCoreIdentityCustom\\Views",
+    "\\ASP.NETCoreIdentityCustom\\Views\\Home",
+    "\\ASP.NETCoreIdentityCustom\\Views\\Role",
+    "\\ASP.NETCoreIdentityCustom\\Views\\RoleViews",
+    "\\ASP.NETCoreIdentityCustom\\Views\\Shared"
+  ],
+  "SelectedNode": "\\ASP.NETCoreIdentityCustom\\Views\\Role\\Manager.cshtml",
+  "PreviewInSolutionExplorer": false
+}
